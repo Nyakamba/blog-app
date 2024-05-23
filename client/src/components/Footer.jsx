@@ -20,7 +20,13 @@ const FooterComp = () => {
           <div className=" grid  grid-cols-2 gap-3 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <Footer.Title title="About" />
             <Footer.LinkGroup col>
-              <Footer.Link href="">100 JS projects</Footer.Link>
+              <Footer.Link
+                href="https://www.100jsprojects.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                100 JS projects
+              </Footer.Link>
             </Footer.LinkGroup>
           </div>
         </div>
