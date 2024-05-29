@@ -25,7 +25,7 @@ const FooterComp = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                100 JS projectss
+                1000 JS projects
               </Footer.Link>
             </Footer.LinkGroup>
           </div>
