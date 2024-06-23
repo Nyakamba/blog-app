@@ -9,8 +9,6 @@ export const updateUser = async (req, res, next) => {
     next(401, "Please fill all the details");
   }
   try {
+    const user = req.user;
   } catch (error) {}
 };
-
-//
-//
