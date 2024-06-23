@@ -8,4 +8,6 @@ export const updateUser = async (req, res, next) => {
   if (!email || !username || !password) {
     next(401, "Please fill all the details");
   }
+  try {
+  } catch (error) {}
 };
