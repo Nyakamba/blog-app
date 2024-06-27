@@ -5,6 +5,6 @@ import { create, getPosts } from "../controllers/post.controller.js";
 const router = express.Router();
 
 router.post("/create", verfyToken, create);
-router.get("/getPosts", getPosts);
+router.get("/getposts", getPosts);
 
 export default router;
