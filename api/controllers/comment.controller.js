@@ -1,9 +1,10 @@
-import { errorHandler } from "../utils/error";
+import Comment from "../modals/comment.model.js";
+import { errorHandler } from "../utils/error.js";
 
 export const createComment = async (req, res, next) => {
   try {
     const { content, postId, userId } = req.body;
-    if (userId != req.user.id) {
+    if (userId !== req.user.id) {
       return next(errorHandler("You are not allowed to create this comment"));
     }
 
