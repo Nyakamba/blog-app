@@ -4,6 +4,7 @@ import {
   getPostComments,
   likeComment,
   editComment,
+  deleteComment,
 } from "../controllers/comment.controller.js";
 import { verfyToken } from "../utils/verifyUser.js";
 
@@ -13,7 +14,7 @@ router.post("/create", verfyToken, createComment);
 router.get("/getPostComments/:postId", getPostComments);
 router.put("/likeComment/:commentId", verfyToken, likeComment);
 router.put("/editComment/:commentId", verfyToken, editComment);
-// router.delete("/deleteComment/:commentId", verfyToken, deleteComment);
+router.delete("/deleteComment/:commentId", verfyToken, deleteComment);
 // router.get("/getcomments", verfyToken, getcomments);
 
 export default router;
